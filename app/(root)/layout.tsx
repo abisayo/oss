@@ -1,8 +1,8 @@
 import React from 'react'
 
-const LayoutPage = ({ children="", className="" }) => {
+const LayoutPage = ({ children} : {children: React.ReactNode}) => {
     return (
-        <div className={`w-full h-full inline-block bg-light dark:bg-tdark ${className}`}>
+        <div className={`w-full h-full inline-block bg-light dark:bg-tdark`}>
             {children}
         </div>
     )
